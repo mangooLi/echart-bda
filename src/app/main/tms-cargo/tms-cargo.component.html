@@ -1,0 +1,80 @@
+<div id="tms-cargo">
+    <div class="block main-shbar">
+        <label class="">选择时间单位</label>
+        <span class="first">
+            <select name="" id="" [(ngModel)]="type" >
+                <option *ngFor="let item of typeList" [value]="item.value" >{{ item.text }}</option>    
+            </select>
+            
+        </span>
+
+        <label class="">选择统计时间</label>
+        <span class="second" id="">
+            <!-- <input type="text" class="" id="tms_transaction_dateRange" [(ngModel)]="dateRange"  placeholder="" name="clients"> -->
+            <!-- <input type="text" class="" id="tms_transaction_dateRange" [(ngModel)]="dateRange"  placeholder="" name="clients"> -->
+            <span class="shbar_ipt" id="tms_transaction_dateRange">{{dateRange}}</span>
+            <label class="ipt-calender"><i class="fa fa-calendar"></i></label>
+        </span>
+
+        
+        <span (click)="query()" class="shbar-btn" >查询</span>
+
+    </div>
+
+    <div class="fblock-con">
+        <div class="fblock block-with-title  cargo-out-top3">
+            <div class="block-title">货物流出省份top3</div>
+            <div class="cargo-out-t3-tb">
+                <table class="table table-bordered tb-center">
+                    <tr><th>排名</th><th>省份名称</th><th>货物流出量</th></tr>
+                    <tr *ngFor="let item of cargo_out_pros"><td>{{item.index}}</td><td>{{item.province}}</td><td>{{item.realQuantityOfGoods}}</td></tr>
+                </table>
+
+            </div>
+        </div>
+
+        <div class="fblock fblock-m0 block-with-title  cargo-in-top3">
+            <div class="block-title">货物流入省份top3</div>
+            <div class="cargo-out-t3-tb">
+                <table class="table table-bordered tb-center">
+                    <tr><th>排名</th><th>省份名称</th><th>货物流出量</th></tr>
+                    <tr *ngFor="let item of cargo_in_pros"><td>{{item.index}}</td><td>{{item.province}}</td><td>{{item.realQuantityOfGoods}}</td></tr>
+                </table>
+
+            </div>
+        </div>
+
+       
+    </div>
+
+    <div class="block block-with-title cargo-in-chart bottm-block">
+        <div class="cargo-block-title">
+            <span class="cargo-title-item cargo-item-active" (click)="switchChart('out')">流出数据图</span>
+            <span class="cargo-title-divider" ></span>
+            <span (click)="switchChart('in')" class="cargo-title-item">流入数据图</span>
+        </div>
+        <div class="chart-legends">
+            <div class="chart-legend" *ngFor="let item of cargo_in_out_pros"><span class="trade-chart-tag" [style.background-color]="item.color"></span><span>{{item.province}}</span></div>
+        </div>
+        <div id="cargo-chart-dom" style="width:1000px;height:300px"></div>
+        
+    </div>
+    <div class="block tc-panel block-with-title bottm-block">
+        <div class="cargo-block-title">
+            <span class="cargo-table-item cargo-item-active" (click)="switchTable('out')">流出数据明细</span>
+            <span class="cargo-title-divider" ></span>
+            <span (click)="switchTable('in')" class="cargo-table-item">流入数据明细</span>
+            <span class="table-export-btn" (click)="export()">导出</span>
+        </div>
+        <div class="table-con">
+            <table class="table table-bordered  tb-center ">
+                
+                <tr><th>日期</th><th *ngFor="let item of cargo_table_pros">{{item.province}}</th></tr>
+                <tr *ngFor="let item of cargo_table_details"><td *ngFor="let it of item">{{it}}</td></tr>
+            </table>
+            <app-pager class="pull-right" [total]="total" (pageIndexChange)="onPageIndexChange($event)"></app-pager>
+        </div>
+    </div>
+
+    
+</div>

@@ -1,0 +1,12 @@
+.timeSelector{
+    display: inline-block;
+    float: right;
+}
+
+
+div .daterangepicker_input{
+    display: none !important;
+}
+.hide{
+    display: none;
+}

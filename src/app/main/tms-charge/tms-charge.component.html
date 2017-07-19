@@ -1,0 +1,130 @@
+<div id="tms-charge">
+    <div class="tms-charge-left mol-2-2">
+        <div class="tcharge-title h5">最近六个月整车热门线路（前六）运价统计表</div>
+        
+        <div class="chart">
+            <div class="tabbable">  
+                <ul class="nav nav-tabs">  
+                    <li (click)="onSelect('one')" class="active"><a href="#one" data-toggle="tab">9.6m</a></li>  
+                    <li (click)="onSelect('tow')" ><a href="#tow" data-toggle="tab">13m</a></li>  
+                    <li (click)="onSelect('three')" ><a href="#three" data-toggle="tab">17.5m</a></li>  
+                </ul>  
+                <div class="tab-content">   
+                    <div class="tab-pane active" id="one">  
+                        <div id="tcharge-analysis-chart" style="width:100%;height:380px"></div>
+                    </div>  
+                    <div id="tow" class="tab-pane">  
+                        <div id="tcharge-chartTow" style="width:509px;height:350px"></div>
+                    </div>  
+                    <div id="three" class="tab-pane">
+                        <div id="tcharge-chartThree" style="width:509px;height:350px"></div> 
+                    </div>  
+                </div>  
+            </div>  
+        </div>
+
+        <div class="table-body table-responsive">
+            <table class="table table-bordered tb-center">
+                <tr>
+                    <th>日期</th>
+                    <th *ngFor="let item of tableTitle">{{item}}</th>
+                </tr>
+                <tbody>
+                <tr *ngFor="let data of tableData">
+                    <td class="col-md-1" *ngFor="let item of data">{{item.feeAmount}}</td>
+                </tr>
+                </tbody>
+            </table>
+            <button  (click)="getFreightRateChartExprot()" class="btn shbar-btn">导出</button>
+        </div>
+    </div>
+
+    <div class="tms-charge-right mol-2-2">
+        <div class="tcharge-title h5">自定义线路运价查询</div>
+        <div class="queryPanel main-shbar">
+            <label class="">选择起始地:</label>
+            <span class="m-r-xl">
+                <select type="text" class="" id="startProvince"   placeholder="" name="clients" (change)="changeStartProvince()" [(ngModel)]="startProvinceCode">
+                    <option value="">请选择</option>
+                    <option *ngFor="let item of povinceList" [value]="item.code">{{item.name}}</option>
+                </select>省
+            </span>
+            <span>
+                <select type="text" class="" id="startCity"   placeholder="" name="clients" [(ngModel)]="startCityCode">
+                    <option value="">请选择</option>
+                    <option *ngFor="let item of cityList" [value]="item.code">{{item.name}}</option>
+                </select>市
+            </span>
+
+            <br/>
+            <label class="">选择目的地:</label>
+            <span class="m-r-xl">
+                <select type="text" class="" id="endProvince"   placeholder="" name="clients" (change)="changeEndProvince()" [(ngModel)]="endProvinceCode">
+                    <option value="">请选择</option>
+                    <option *ngFor="let item of povinceList" [value]="item.code">{{item.name}}</option>
+                </select>省
+            </span>
+            
+            <span>
+                <select type="text" class="" id="endCity"   placeholder="" name="clients" [(ngModel)]="endCityCode">
+                    <option value="">请选择</option>
+                    <option *ngFor="let item of endCityList" [value]="item.code">{{item.name}}</option>
+                </select>市
+            </span>
+            <br/>
+            <label class="">选择车长:</label>
+            <span >
+                <select type="text" class="" id="table_client"   placeholder="" name="clients" [(ngModel)]="carLength">
+                    <option value="">请选择</option>
+                    <option *ngFor="let item of carLengthList" [value]="item.value">{{item.text}}</option>
+                </select>
+            </span>
+             <br/>
+            <label class="">选择时间单位:</label>
+            <span class="m-r-xl">
+                <select type="text" class="" id="table_client"   placeholder="" name="clients" [(ngModel)]="time">
+                    <option value="">请选择</option>
+                    <option *ngFor="let item of timeList" [value]="item.value"> {{item.text}}</option>
+                </select>&nbsp;&nbsp;&nbsp;
+            </span>
+            <span >
+                <!-- <input type="text" class="" id="querydateRange" [(ngModel)]="dateRange"  placeholder="" name="clients"> -->
+                <span class="shbar_ipt" id="querydateRange">{{dateRange}}</span>
+                <div class="ipt-calender">
+                    <i class="fa fa-calendar"></i>
+                </div>
+            </span>
+
+             <label class=""></label>
+              <button class="btn shbar-btn" (click)='onQuery()'>查询</button>
+        </div>
+
+        <div class="chartQuery">
+             <div id="tcharge-chartQuery" style="width:100%;height:288px"></div>
+        </div>
+
+
+        <div class="table-body">
+            <table class="table table-bordered">
+                <thead>
+                    <tr class="active">
+                    <th>日期</th>
+                    <th>{{title}}</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let item of feeAmountList">
+                        <td>{{item.time}}</td>
+                        <td>{{item.feeAmount}}</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="foot">
+                <button (click)="getFreightRateExpro()" class="btn shbar-btn pull-left">导出</button>
+                <app-pager class="pull-right" [total]="total" (pageIndexChange)="onPageIndexChange($event)"></app-pager>
+            </div>
+           
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,61 @@
+<div id="tms-route">
+    <div class="block main-shbar">
+        <label class="">选择时间单位</label>
+        <span class="first">
+            <select name="" id="" [(ngModel)]="type">
+                <option *ngFor="let item of typeList" [value]="item.value" >{{ item.text }}</option>    
+            </select>
+            
+        </span>
+
+        <label class="">选择统计时间</label>
+        <span class="second" id="">
+            <!-- <input type="text" class="" id="querydateRange" [(ngModel)]="dateRange"  placeholder="" name="clients"> -->
+            <span class="shbar_ipt" id="querydateRange">{{dateRange}}</span>
+            <label class="ipt-calender"><i class="fa fa-calendar"></i></label>
+        </span>
+
+        
+        <span (click)="query()" class="shbar-btn" >查询</span>
+
+    </div>
+
+    <div class="fblock-con">
+        <div class="fblock block-with-title  t5-tab">
+            <div class="block-title">热门线路top5</div>
+            <div class="t5-table-con">
+                <table class="table table-bordered tb-center">
+                    <tr><th>排名</th><th>货物流向</th><th>累计交易次数</th></tr>
+                    <tr *ngFor="let item of hotLines"><td>{{item.index}}</td><td>{{item.lineString}}</td><td>{{item.counts}}</td></tr>
+                </table>
+
+            </div>
+        </div>
+
+        <div class="fblock fblock-m0 t5-chart block-with-title">
+            <div class="block-title">热门线路交易次数统计图</div>
+            <div class="t5-chart-lengends">
+                <div class="t5-chart-lengend" *ngFor="let item of hotLines">
+                    <span class="legend-box" [style.background-color]="item.color"></span><span class="legend-text">{{item.lineString}}</span>
+                </div>
+            </div>
+            <div id="route-chart-dom" style="width:670px;height:250px"></div>
+        </div>
+    </div>
+
+    
+
+    <div class="block block-with-title tline-detail bottm-block">
+        <div class="block-title">整体数据明细<span class="table-export-btn" (click)="export()">导出</span></div>
+        <div class="table-con">
+            <table class="table table-bordered tb-center">
+                <tr><th>日期</th><th *ngFor="let item of hotLines">{{item.lineString}}</th></tr>
+                <tr *ngFor="let i of showTableList"><td>{{i.date}}</td><td *ngFor="let count of i.counts">{{count}}</td></tr>
+            </table>
+            <app-pager class="pull-right" [total]="total" (pageIndexChange)="onPageIndexChange($event)"></app-pager>
+        </div>
+        
+    </div>
+
+    
+</div>

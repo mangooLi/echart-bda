@@ -1,0 +1,49 @@
+<!--运力分析-->
+<div  id="ccp-trans" >
+
+    <div class="block block-with-title trans-chart">
+        <div class="block-title">运力概览<span class="trans-chart-tag">当前可查询<span class="total-car-num">{{cat_num_total}}</span>辆</span></div>
+        <div class="ccp-trans-chart-con">
+            <div id="transp-container" style="height:600px;width:1000px"></div>
+
+        </div>
+        
+    </div>
+
+    <div class="block block-with-title trans-detail bottm-block">
+        <div class="trans-detail-block trans-chart-title">车型分布</div>
+        <div class="trans-detail-block trans-chart-title">车长分布</div>
+        <div class="trans-detail-block carType-chart">
+            <div class="car-type-chart-tag">
+
+            </div>
+            <div id="car-type-container" style="height: 300px;width:460px"></div>
+            <div class="car-types-top3">
+                <div class="panel-title">车型分布<span>TOP3</span><i class="fa fa-chevron-right"></i></div>
+                <div class="car-type" *ngFor="let item of carTypeList">
+                    <span class="car-type-index">{{item.index}}</span>
+                    <span class="car-type-name">{{item.name}}</span>
+                    <span class="car-type-num">{{item.value}}</span>
+                </div>
+            </div>
+
+        </div>
+        <div class="trans-detail-block carLength-chart">
+             <div class="car-type-chart-tag">
+
+            </div>
+            <div id="car-length-container" style="height: 300px;width:460px"></div>
+            <div class="car-types-top3">
+                <div class="panel-title">车长分布<span>TOP3</span><i class="fa fa-chevron-right"></i></div>
+                <div class="car-type" *ngFor="let item of carLengthList">
+                    <span class="car-type-index">{{item.index}}</span>
+                    <span class="car-type-name">{{item.name}}</span>
+                    <span class="car-type-num">{{item.value}}</span>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+
+</div>

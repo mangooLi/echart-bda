@@ -1,0 +1,20 @@
+<div class="driver-withdraw">
+      <div class="driver-withdraw-title">{{year}}年{{month}}月{{date}}日&nbsp;星期{{day}}&nbsp;{{hour}}：{{minute}}：{{second}}</div>
+      <div class="driver-withdraw-container">
+            <div class="about-car">
+                  <div class="driver-withdraw-car-img"></div>
+                  <div class="total-car-num"><span class="wd-car-pull-right">平台总车辆数</span><span class="wd-pull-left"><span class="with-draw-num">{{vehicleInfo.totalVehicleCount}}</span> 辆</span></div>
+                  <div class="car-toloal-num"><span class="wd-car-pull-right">待运车辆数</span><span class="wd-pull-left"><span class="with-draw-num">{{vehicleInfo.shipmentVehicleCount}}</span> 辆</span></div>
+                  <div class="car-onroad-num"><span class="wd-car-pull-right">在途车辆数</span><span class="wd-pull-left"><span class="with-draw-num">{{vehicleInfo.inTransitVehicleCount}}</span> 辆</span></div>
+                        
+            </div>
+            <div class="about-line"></div>
+            <div class="about-money">
+                  <div class="driver-withdraw-money-img"></div>
+                  <div class="month-withdraw"><span class="wd-money-pull-right">当月司机提现金额</span><span class="wd-pull-left"><span class="with-draw-num">{{withdrawInfo.withdrawalsMoneyOfMonths}}</span> 元</span></div>
+                  <div class="total-withdraw"><span class="wd-money-pull-right">累计司机提现金额</span><span class="wd-pull-left"><span class="with-draw-num">{{withdrawInfo.totalWithdrawalsMoney}}</span> 元</span></div>
+                  <div class="average-withdraw"><span class="wd-money-pull-right">平均单笔提现金额</span><span class="wd-pull-left"><span class="with-draw-num">{{withdrawInfo.averageWithdrawalsMoney}}</span> 元</span></div>
+            </div>
+      </div>
+   
+</div>

@@ -1,0 +1,94 @@
+.about-car{
+    width: 45%;
+    float: left;
+    /*border-right: 3px solid #00c8f5;*/
+    /*border-bottom: 10px transparent #f00;*/
+    padding-bottom: 8px;
+}
+.about-car>div{
+    margin-bottom: 5%;
+}
+.about-line{
+    width: 0.5%;
+    float: left;
+    height: 90%;
+    background-color: #00c8f5;
+}
+.about-money{
+    width: 54%;
+    float: left;
+    padding-bottom: 5px;
+}
+.about-money>div{
+    margin-bottom: 4%;
+}
+
+.wd-car-pull-right,.wd-money-pull-right{
+    display: inline-block;
+    /*width: 50%;*/
+    text-align: right;
+    
+}
+.wd-car-pull-right{
+    margin-right: 5%;
+    width: 50%;
+}
+.wd-money-pull-right{
+    margin-right: 6.545%;
+    width: 50%;
+}
+.wd-pull-left{
+    text-align: left;
+}
+
+.driver-withdraw{
+
+    background: url('../../assets/img/withdraw-bg.png') no-repeat;
+     background-size: 100% 100%;
+    -moz-background-size:100% 100%;
+    -webkit-background-size: 100% 100%; 
+    padding-top: 0px;
+    height: 22.73%;
+    padding-top: 1.5%;
+}
+.driver-withdraw-container{
+    width: 100%;
+    margin-top: 5%;
+    /*overflow: hidden;*/
+    height: 75%;
+    /*padding-bottom: 10*/
+}
+.with-draw-num{
+    font-family: Arial;
+    font-size: 150%;
+    color: #00cfff;
+    /*margin-left: 5px;*/
+}
+.driver-withdraw-title{
+    font-family: 微软雅黑;
+    font-size: 133.3%;
+    color: #00c8f5;
+    text-align: center;
+
+}
+
+.driver-withdraw-car-img{
+    background: url('../../assets/img/che.png') no-repeat;
+    background-size: 100% 100%;
+    -moz-background-size:100% 100%;
+    -webkit-background-size: 100% 100%; 
+    width: 32px;
+    height: 32px;
+    margin: 0 auto;
+    margin-bottom: 8%;
+}
+.driver-withdraw-money-img{
+    background: url('../../assets/img/qian.png') no-repeat;
+    background-size: 100% 100%;
+    -moz-background-size:100% 100%;
+    -webkit-background-size: 100% 100%; 
+    width: 32px;
+    height: 32px;
+    margin: 0 40%;
+    margin-bottom: 6.545%;
+}

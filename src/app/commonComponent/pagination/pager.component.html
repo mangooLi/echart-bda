@@ -1,0 +1,37 @@
+<nav aria-label="Pagination">
+  <ul class="pagination pull-left">
+    <div class="pageSize-control pull-left">
+      <div class="pull-left pageleable">显示行数:</div>
+      <div class="pull-left">
+        <select class="form-control input-sm" [(ngModel)]="pageSize" (change)="changePageSize()">
+          <option *ngFor="let item of paginationPageSizes">{{item}}</option>
+        </select>
+      </div>
+    </div>
+    <!--<li>
+      <a (click)="first()"><span>|&laquo;</span></a>
+    </li>-->
+    <li [ngClass]="{disabled: pageIndex == 1}">
+      <a (click)="prev()"><span>上一页</span></a>
+    </li>
+    <li *ngIf="showPages[0] > 1">
+      <a>...</a>
+    </li>
+    <li *ngFor="let item of showPages" [ngClass]="{active: item == pageIndex}">
+      <a (click)="onPageIndexChange(item)">{{item}} <span class="sr-only">(current)</span></a>
+    </li>
+    <li *ngIf="showPages[showPages.length - 1] < totalPage">
+      <a>...</a>
+    </li>
+    <li [ngClass]="{disabled: pageIndex == totalPage}">
+      <a (click)="next()"><span aria-hidden="true">下一页</span></a>
+    </li>
+    <!--<li>
+      <a><span aria-hidden="true">&raquo;|</span></a>
+    </li>-->
+
+  </ul>
+
+
+  
+</nav>

@@ -1,0 +1,82 @@
+<div class="">
+    <div class="block main-shbar">
+        <label class="">选择时间单位</label>
+        <span class="first">
+            <select name="" id="" [(ngModel)]="type">
+                <option *ngFor="let item of typeList" [value]="item.value" >{{ item.text }}</option>    
+            </select>
+            
+        </span>
+
+        <label class="">选择统计时间</label>
+        <span class="second" id="">
+            <!-- <input type="text" class="" id="tms_transaction_dateRange" [(ngModel)]="dateRange"  placeholder="" name="clients"> -->
+            <span class="shbar_ipt" id="tms_transaction_dateRange">{{dateRange}}</span>
+            <label class="ipt-calender"><i class="fa fa-calendar"></i></label>
+        </span>
+
+        
+        <span (click)="query()" class="shbar-btn" >查询</span>
+
+    </div>
+
+    <div class="block trade-info">
+        <div class="trade-detail">
+            <img src="../../../assets/adminImg/trade-detail-1.png" alt="" class="trade-tag">
+            <div class="trade-item">
+                <span class="trade-num">{{feeIn}} 万</span>
+                <hr class="hr-hidden">
+                <span>平台与货主企业累计交易额</span>
+            </div>
+        </div>
+        <div class="trade-detail">
+            <img src="../../../assets/adminImg/trade-detail-2.png" alt="" class="trade-tag">
+            <div class="trade-item">
+                <span class="trade-num">{{feeOut}} 万</span>
+                <hr class="hr-hidden">
+                <span>平台与货车司机累计交易额</span>
+            </div>
+        </div>
+        <div class="trade-detail">
+            <img src="../../../assets/adminImg/trade-detail-3.png" alt="" class="trade-tag">
+            <div class="trade-item">
+                <span class="trade-num">{{tradeTimes}} 次</span>
+                <hr class="hr-hidden">
+                <span>平台累计交易次数</span>
+            </div>
+        </div>
+        <div class="trade-detail">
+            <img src="../../../assets/adminImg/trade-detail-4.png" alt="" class="trade-tag">
+            <div class="trade-item">
+                <span class="trade-num">{{ton}} 百吨</span>
+                <hr class="hr-hidden">
+                <span>平台累计交易吨位</span>
+            </div>
+        </div>
+    
+    </div>
+
+    <div class="block trade-chart">
+        <div class="chart-title">交易统计图</div>
+        <div class="chart-legends">
+            <div class="chart-legend" *ngFor="let item of legends"><span class="trade-chart-tag" [style.background-color]="item.color"></span><span>{{item.name}}</span></div>
+        </div>
+        <div class="tchart-con">
+            <div id="tradeChartDom" style="width:950px;height:500px"></div>
+        </div>
+        
+    </div>
+
+    <div class="block trade-table bottm-block">
+        <div class="table-title">整体数据明细<span class="table-export-btn" (click)="export()">导出</span></div>
+        <div class="trade-table-con">
+            <table id="trade_table" class="table table-bordered tb-center" >
+                <tr><th>日期</th><th>交易额应付（万元）</th><th>交易额应收（万元）</th><th>交易吨位（百吨）</th><th>交易次数</th></tr>
+                <tr *ngFor="let item of tableList"><td>{{item.time}}</td><td>{{item.feeOut}}</td><td>{{item.feeIn}}</td><td>{{item.ton}}</td><td>{{item.tradeTimes}}</td></tr>
+            </table>
+            <app-pager class="pull-right" [total]="total" (pageIndexChange)="onPageIndexChange($event)"></app-pager>
+        </div>
+        
+    </div>
+
+</div>

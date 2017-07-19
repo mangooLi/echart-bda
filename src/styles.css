@@ -1,0 +1,114 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+@import "../node_modules/bootstrap-table/dist/bootstrap-table.min.css";
+@import "../node_modules/jquery-date-range-picker/dist/daterangepicker.min.css";
+@import "../node_modules/font-awesome/css/font-awesome.min.css";
+@import "./styles1.css";
+
+
+body{
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+    font-family: 宋体;
+    color: #fff;
+}
+.bootbox-body{
+    color: #333;
+    font-family: 微软雅黑;
+    font-size: 16px;
+}
+
+.hr-hidden {
+    height: 0px;
+    border: 0;
+    margin: 0px;
+    padding: 0px;
+}
+.tb-center td,th{
+    text-align: center;
+}
+.tb-center th{
+    background-color: #eeeeee;
+}
+.tb-center td{
+    border-color: #dcdcdc;
+}
+.bottm-block{
+    border-bottom: 20px solid #eee;
+}
+.ipt-calender{
+    display: inline-block;
+    position: relative;
+    left: -30px;
+}
+
+.block{
+    margin: 10px 20px 0 20px;
+}
+.main-shbar{
+    margin-top: 20px;
+    height: 48px;
+    background-color: #fff;
+    font-size: 16px;
+    font-family: 微软雅黑;
+    padding-left: 20px;
+    line-height: 48px;
+}
+
+.main-shbar select,input,.shbar_ipt{
+    display: inline-block;
+    height: 26px;
+    border:1px solid #399bff;
+    border-radius: 13px;
+    min-width: 84px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.shbar_ipt{
+    line-height: 26px;
+    cursor: pointer;
+}
+.main-shbar .first{
+    margin-right: 45px;
+}
+.main-shbar .second{
+    margin-right: 20px;
+}
+.shbar-btn{
+    display: inline-block;
+    width: 80px;
+    height: 26px;
+    border: 1px solid #399bff;
+    background-color: #399bff;
+    border-radius: 13px;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 26px;
+    cursor: pointer;
+    color: #fff;
+}
+.fblock-con{
+    margin:10px 20px 0 20px;
+    overflow: hidden;
+}
+.fblock{
+    margin-right: 10px;
+    background-color: #fff;
+    float: left;
+}
+.fblock-m0{
+    margin-right: 0px;
+}
+.block-title{
+    margin-left: 10px;
+    height: 20px;
+    font:bold  14px 微软雅黑;
+    line-height: 20px;
+    padding-left: 10px;
+    border-left: 5px solid #f7a006;
+}
+.block-with-title{
+    padding-top: 10px;
+}

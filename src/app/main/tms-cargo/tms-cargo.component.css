@@ -1,0 +1,87 @@
+.cargo-out-top3{
+    width: 500px;
+}
+.cargo-out-t3-tb{
+    margin-top: 14px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.cargo-in-top3{
+    width: 500px;
+}
+
+.cargo-in-chart,.cargo-out-chart{
+    background-color: #fff;
+}
+#tms_transaction_dateRange{
+    width: 250px;
+}
+.chart-legends{
+    margin-top: 20px;
+}
+.chart-legend{
+    display: inline-block;
+    margin-left: 200px;
+
+}
+.trade-chart-tag{
+    display: inline-block;
+    width: 30px;
+    height: 8px;
+    border-radius: 4px;
+    margin-right: 10px;
+    background-color: #f92;
+}
+.cargo-title-item{
+    display: inline-block;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 14px;
+    font-family: 微软雅黑;
+    cursor: pointer
+}
+.cargo-table-item{
+    display: inline-block;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 14px;
+    font-family: 微软雅黑;
+    cursor: pointer
+}
+.cargo-item-active{
+    border-bottom: 2px solid #f89f07;
+    font-weight: bold;
+}
+.cargo-title-divider{
+    border-left: 1px solid #eee;
+}
+#cargo-chart-dom{
+    top: -30px;
+}
+
+.tc-panel{
+    background-color: #fff;
+}
+.table-con{
+    margin-top: 20px;
+    margin-left: 25px;
+    margin-right: 25px;
+    overflow: hidden;
+    padding-bottom: 10px ;
+    min-height: 435px;
+}
+.table-export-btn{
+    cursor: pointer;
+    display: block;
+    width: 80px;
+    height: 20px;
+    background-color: #399bff;
+    border-radius: 10px;
+    float: right;
+    text-align: center;
+    color: #fff;
+    margin-right: 30px;
+}
+

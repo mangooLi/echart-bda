@@ -1,0 +1,28 @@
+#hot-route-price-container{
+    background: url('../../assets/img/hot-route-price-bg.png') no-repeat;
+     background-size: 100% 100%;
+    -moz-background-size:100% 100%;
+    -webkit-background-size: 100% 100%; 
+    /*margin:3px 0 0 20px;*/
+    margin-top: 0.625%;
+    padding-top: 0px;
+    height: 38.03%;
+    padding: 12% 0 0 3%;
+}
+.route-title{
+    float: left;
+    width: 33%;
+    padding-left: 2%;
+}
+.route-box{
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    /*background-color: #f00;*/
+    margin-right: 5%;
+}
+
+#hot-route-chart{
+    position: relative;
+    top: -8%;
+}

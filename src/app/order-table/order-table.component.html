@@ -1,0 +1,27 @@
+<ul class="order-list-table" id="order-list-table">
+    <li *ngFor="let item of orderList" [class.o_t_border]='item.index!=9'>
+        <!--<span>{{item.date}}</span>-->
+        <div class="o-t-box o-t-creationTime">
+            <span>{{item.Date}}</span><br/>
+            <span>{{item.Time}}</span>
+        </div>
+        <div class="o-t-box o-t-address">
+            <span class="o-t-province">{{item.StartProvince}}</span><br/>
+            <span class="o-t-province">{{item.OriginCityName}}</span>
+        </div>
+        <div class="o-t-box o-t-arrow">
+
+        </div>
+        <div class="o-t-box o-t-address">
+            <span class="o-t-province">{{item.EndProvince}}</span><br/>
+            <span class="o-t-province">{{item.DestinationCityName}}</span>
+        </div>
+        <div class="o-t-box o-t-goods">
+            <span class="o-t-goodstype">{{item.GoodsTypeName}}</span><br/>
+            <span class="o-t-goodsNum">{{item.QuantityOfGoods}}{{item.GoodsUnit}}</span>
+        </div>
+        <div class="o-t-box o-t-state">
+            <span>{{item.OrderStatus}}</span>
+        </div>
+    </li>
+</ul>

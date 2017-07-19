@@ -1,0 +1,105 @@
+
+#tms_transaction_dateRange{
+    width: 250px;
+    /* display: inline-block; */
+    line-height: 26px;
+    cursor: pointer;
+}
+
+
+
+/**第二栏***/
+.trade-info{
+    height: 80px;
+    padding: 10px 0;
+    overflow: hidden;
+    background-color: #fff;
+}
+.trade-detail{
+    width: 210px;
+    height: 60px;
+    margin: 0 20px;
+    float: left;
+    background-color: #f6f6f6;
+    padding: 10px 10px;
+    /*line-height: 40px;*/
+}
+.trade-detail img{
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    vertical-align: top;
+}
+.trade-item{
+    display: inline-block;
+    height: 40px;
+}
+.trade-num{
+    font-size: 20px;
+    line-height: 20px;
+    font-family:  Helvetica;
+    color: #333;
+    vertical-align: top;
+}
+.hr-hidden+span{
+    line-height: 24px;
+    /*vertical-align: bottom;*/
+}
+/*********************************************************************/
+.trade-chart{
+    background-color: #fff;
+    padding:10px;
+}
+.chart-title{
+    font:bold 14px 微软雅黑;
+    color: #333;
+    height: 20px;
+    border-left: 5px solid #f7a006;
+    padding-left: 10px;
+}
+.chart-legends{
+    margin-top: 20px;
+}
+.chart-legend{
+    display: inline-block;
+    margin-left: 50px;
+
+}
+.trade-chart-tag{
+    display: inline-block;
+    width: 30px;
+    height: 8px;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+/**************************************************/
+.trade-table{
+    padding: 10px 10px;
+    background-color: #fff;
+}
+.table-title{
+    font:bold 14px 微软雅黑;
+    color: #333;
+    height: 20px;
+    border-left: 5px solid #f7a006;
+    padding-left: 10px;
+}
+.table-export-btn{
+    display: block;
+    width: 80px;
+    height: 20px;
+    background-color: #399bff;
+    border-radius: 10px;
+    float: right;
+    text-align: center;
+    color: #fff;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.trade-table-con{
+    margin:20px 20px 0 15px;
+    overflow: hidden;
+    min-height: 435px;
+}

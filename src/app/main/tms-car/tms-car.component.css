@@ -1,0 +1,140 @@
+#tms-car{
+    overflow: hidden;
+    width: 100%;
+    height:900px;
+}
+.block{
+    margin: 10px 0px 0px 0px;
+    /*padding-top: 20px;*/
+    background-color: #fff;
+    overflow: hidden;
+    /*padding-left: 20px;*/
+    padding-bottom: 15px;
+    /*height: 20px;*/
+}
+
+
+.block3{
+    background-color: #fff;
+    overflow: hidden;
+}
+
+#querydateRange{
+    width:250px;
+}
+.car-trade-times caption,.car-trade-totalTimes caption,.car-trade-totalMoney caption,.car-trade-totalTimes-table caption{
+    border-left: 5px solid #f7a006;
+    font:bold  14px 微软雅黑;
+    color:#333;
+    margin:10px 0px 10px 0px;
+    padding:0px 0px 0px 10px;
+}
+
+.car-trade-times-table tr th{
+    font-weight:normal
+}
+.car-trade-times-table tr td{
+    border:1px solid #ddd
+}
+.car-trade-td1{
+    font-weight: bold !important;
+    background-color:#eeeeee;
+}
+.car-trade2{
+    border-left: 5px solid #f7a006;
+    font:bold  14px 微软雅黑;
+    color:#333;
+    top:30px;
+    left:10px;
+    position:relative;
+    padding:0px 0px 0px 10px;
+}
+
+.car-trade-totalTimes-table tr th{
+    background:#eeeeee;
+    vertical-align: middle !important;
+}
+
+.car-trade-totalTimes-table tr td{
+    text-align: center;
+    vertical-align: middle !important;    
+}
+.car-trade-totalTimes-table span{
+    /*background-color: #666666;
+    color:#fff;*/
+    display: block;
+    margin:0px !important;
+    text-align: center;
+    line-height: 25px;
+    height:25px;
+    width:25px;
+    border-radius:30px;
+}
+.carCir{
+    background-color:#ff5259 !important;
+    color:#fff; 
+}
+.carTradeTotalSpan{
+    background-color: #666666;
+    color:#fff; 
+}
+.carTradeTotalSpan2{
+    background-color: #666666;
+    color:#fff;
+}
+
+.tms-carMo{
+    color:#333;
+    font-weight: bold;
+    font-size: 14px;
+}
+.main-shbar{
+    margin:20px 19px 0px 20px;
+}
+.block label{
+    display:inline-block;
+    text-align: right;
+    margin-right: 0px;
+}
+.block span{
+    display: inline-block;
+    margin-right: 50px;
+}
+
+.mol-4-3{
+    width: 38.4%;
+    float: left;
+    margin-left: 20px;
+}
+.mol-3-3{
+    width: 28.8%;
+    float: left;
+    margin-left: 1%;
+}
+.tb-90{
+    width: 95%;
+    margin-left: 10px;
+}
+
+.car-trade-times{
+    height:430px
+}
+.car-trade-totalTimes,.car-trade-totalMoney{
+    height: 350px;
+    width:28%
+}
+
+.pie-chart-con{
+    position:relative;
+    top:-360px;
+    height: 360px;
+}
+.car-source ,.car-evaluate{
+    height: 350px;
+    width:28%
+}
+
+
+.car-evaluate-sort{
+    width:61px;
+}

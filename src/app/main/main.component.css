@@ -1,0 +1,39 @@
+#admin{
+    background-color: #015c8b;
+}
+.showArea{
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+}
+#header{
+    position: absolute;
+    left: 150px;
+    top:0px;
+    height: 50px;
+    line-height: 50px;
+    font-weight: bold;
+    width: 1050px;
+    background-color:#399bff;
+    text-align: left;
+    z-index: 2;
+
+}
+#navLeft{
+    position: absolute;
+    top:0px;
+    bottom: 0px;
+    left: 0px;
+    width: 150px;
+    background-color:#3b484b
+}
+
+#main{
+    margin-left:150px;
+    padding-top: 50px;
+    min-height: 1000px;
+    color: #333;
+    font-family: 微软雅黑;
+    font-size: 12px;
+    background-color: #eeeeee;
+}

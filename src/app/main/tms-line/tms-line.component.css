@@ -1,0 +1,62 @@
+#querydateRange{
+    width: 250px;
+}
+.t5-tab{
+    width: 320px;
+    height: 290px;
+    padding-top: 10px;
+}
+
+.t5-table-con{
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 14px;
+}
+.t5-chart{
+    width: 680px;
+    height: 290px;
+}
+.tline-detail{
+    background-color: #fff;
+}
+.table-con{
+    margin-top: 20px;
+    margin-left: 25px;
+    margin-right: 25px;
+    overflow: hidden;
+    padding-bottom: 10px;
+    min-height: 435px;
+}
+.legend-box{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 6px;
+    background-color: #f80;
+    margin-right: 5px;
+}
+.t5-chart-lengends{
+    margin: 0 auto;
+    margin-top: 24px;
+    width: 630px;
+}
+.t5-chart-lengend{
+    display: inline-block;
+    margin-right: 10px;
+}
+#route-chart-dom{
+    position: relative;
+    top:-40px;
+}
+.table-export-btn{
+    cursor: pointer;
+    display: block;
+    width: 80px;
+    height: 20px;
+    background-color: #399bff;
+    border-radius: 10px;
+    float: right;
+    text-align: center;
+    color: #fff;
+    margin-right: 30px;
+}

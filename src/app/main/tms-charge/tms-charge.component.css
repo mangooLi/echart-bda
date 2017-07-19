@@ -1,0 +1,66 @@
+#tms-charge{
+    overflow: hidden;
+}
+.tms-charge-left, .tms-charge-right{
+    padding: 10px 0px;
+}
+.tcharge-title{
+    border-left: 4px solid #ECA117;
+    margin-left: 8px; 
+    padding-left: 8px; 
+    font-weight:  800;
+}
+.mol-2-2{
+    width: 48.5%;
+    float: left;
+    margin-left: 1%;
+    background: #fff;
+}
+.tb-90{
+    width: 95%;
+    margin-left: 2.5%;
+}
+.chart{
+    margin: 70px 0px;;
+}
+.nav-tabs li a{
+    border-bottom: none;
+}
+.nav-tabs li.active a{
+  font-weight: 800;
+  /*border-left: none;*/
+  border-top: 2px solid #F89F07;
+}
+.table-body{
+    width: 509px;
+    height: 460px;
+}
+.shbar-btn{
+    line-height: 14px;
+}
+.shbar-btn:hover, .shbar-btn:focus{
+    color: #fff;
+}
+.queryPanel{
+    padding: 0px 20px;
+}
+.main-shbar{
+    height: 100%;
+    font-size: 14px;
+    line-height: 40px;
+}
+.main-shbar label{
+    width: 100px;
+    text-align: left;
+}
+.m-r-xl{
+    margin-right:20px; 
+}
+.chartQuery{
+    border-top:1px solid #ddd;
+}
+#querydateRange{
+    width: 220px;
+    line-height: 26px;
+    
+}

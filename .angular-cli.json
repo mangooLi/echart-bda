@@ -1,0 +1,74 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "project": {
+    "name": "analysis-demo"
+  },
+  "apps": [
+    {
+      "root": "src",
+      "outDir": "dist",
+      "assets": [
+        "assets",
+        "favicon.ico"
+      ],
+      "index": "index.html",
+      "main": "main.ts",
+      "polyfills": "polyfills.ts",
+      "test": "test.ts",
+      "tsconfig": "tsconfig.app.json",
+      "testTsconfig": "tsconfig.spec.json",
+      "prefix": "app",
+      "styles": [
+        "styles.css"
+      ],
+
+      "scripts": [
+          "../node_modules/jquery/dist/jquery.min.js",
+          "../node_modules/bootstrap/dist/js/bootstrap.min.js",
+          "../node_modules/echarts/dist/echarts.js",
+          "../node_modules/echarts-stat/dist/ecStat.min.js",
+          "../node_modules/echarts/dist/extension/dataTool.min.js",
+          "../node_modules/echarts/map/js/china.js",
+          "../node_modules/echarts/map/js/world.js",
+          "../node_modules/moment/min/moment.min.js",
+          "../node_modules/bootstrap-daterangepicker/daterangepicker.js",
+          "../node_modules/bootstrap-table/dist/bootstrap-table.min.js",
+          "../node_modules/wilddog/lib/wilddog-web-all.js",
+          "../node_modules/bootbox/bootbox.min.js",
+          "../node_modules/jquery-date-range-picker/dist/jquery.daterangepicker.min.js"
+          
+          
+      ],
+      "environmentSource": "environments/environment.ts",
+      "environments": {
+        "dev": "environments/environment.ts",
+        "prod": "environments/environment.prod.ts"
+      }
+    }
+  ],
+  "e2e": {
+    "protractor": {
+      "config": "./protractor.conf.js"
+    }
+  },
+  "lint": [
+    {
+      "project": "src/tsconfig.app.json"
+    },
+    {
+      "project": "src/tsconfig.spec.json"
+    },
+    {
+      "project": "e2e/tsconfig.e2e.json"
+    }
+  ],
+  "test": {
+    "karma": {
+      "config": "./karma.conf.js"
+    }
+  },
+  "defaults": {
+    "styleExt": "css",
+    "component": {}
+  }
+}

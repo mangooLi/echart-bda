@@ -1,0 +1,31 @@
+.client-order-container{
+    background: url('../../assets/img/client-order.png') no-repeat;
+     background-size: 100% 100%;
+    -moz-background-size:100% 100%;
+    -webkit-background-size: 100% 100%; 
+    /*margin:3px 20px 0 0px;*/
+    margin-top: 0.625%;
+    height: 35.79%;
+    padding-top: 12.5%;
+  
+    
+}
+.client-order-name{
+    display: inline-block;
+    width: 45%;
+    /*text-align: center;*/
+    padding-left: 10%;
+    color: #00c8f5;
+}
+.client-order-count{
+    width: 55%;
+    display: inline-block;
+    /*text-align: center;*/
+    padding-left: 15%;
+    color: #00c8f5
+}
+#client-order-chart{
+    position: relative;
+    left: 5%;
+    top:-12.5%;
+}

@@ -1,0 +1,36 @@
+
+
+
+
+<div class="navhead">
+    <a routerLink="/home"><img src="../../../assets/adminImg/nav-head.png" alt=""></a>
+</div>
+
+
+<div class="ad-nav">
+    <ul>
+        <li class="main-menu ccp-menu" >
+            <div class="main-menu-title" (click)="toggle('ccp')">
+                <img src="../../../assets/adminImg/ccp-logo.png" alt="">
+                <span>来货拉分析</span>
+            </div>
+            <ul class="sub-menu-ul">
+                <li class="sub-menu ccp-user"><a routerLink="/app/ccp/user"><span>用户分析</span></a></li>
+                <li class="sub-menu ccp-trans"><a routerLink="/app/ccp/trans"><span>运力分析</span></a></li>
+            </ul>
+        </li>
+        <li class="main-menu tms-menu">
+            <div class="main-menu-title " (click)="toggle('tms')">
+                <img src="../../../assets/adminImg/tms-logo.png" alt="">
+                <span>智运通分析</span>
+            </div>
+            <ul class="sub-menu-ul">
+                <li class="sub-menu tms-trade" ><a class="auto" routerLink="/app/tms/trade"  routerLinkActive="active"><span>交易分析</span></a></li>
+                <li class="sub-menu tms-cargo"><a class="auto" routerLink="/app/tms/cargo" routerLinkActive="active"><span>货流分析</span></a></li>
+                <li class="sub-menu tms-route"><a class="auto" routerLink="/app/tms/route" routerLinkActive="active"><span>线路分析</span></a></li>
+                <li class="sub-menu tms-car"><a class="auto" routerLink="/app/tms/car" routerLinkActive="active"><span>车辆分析</span></a></li>
+                <li class="sub-menu tms-charge"><a class="auto" routerLink="/app/tms/charge" routerLinkActive="active"><span>运价分析</span></a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
